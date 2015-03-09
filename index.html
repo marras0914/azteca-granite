@@ -3,161 +3,185 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Azteca Granite</title>
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
+   <body>
+    
+<!-- Top-bar -->
+    <div class="fixed">
+        <nav class="top-bar" data-topbar role="navigation">
+            <ul class="title-area">
+                <li class="name" data-menuanchor="home">
+                    <h1><a href="#home"><img src="img/aztec-calendar.png" alt="" width="61px" overflow="overlay";>&nbsp;&nbsp;&nbsp;<span>Azteca Granite</span></a></h1>
+                </li>
+                <li class="toggle-topbar menu-icon">
+                    <a href="#"><span>Menu</span></a>
+                </li>
+            </ul>
+
+            <section class="top-bar-section">
+                <ul class="right">
+                  <li data-menuanchor="kitchens"><a href="#kitchens">Kitchens</a></li>
+                  <li data-menuanchor="bathrooms"><a href="#bathrooms">Bathrooms</a></li>
+                  <li data-menuanchor="sinks"><a href="#sinks">Sinks</a></li>
+                  <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                </ul>
+            </section>
+            <div id="arrow" class="bounce arrow"></div>
+        </nav>
+    </div>
+<!-- End Top-bar -->
+
+<!-- landing bxslider -->
+  <div id="fullpage">
+    <div class="section" data-anchor="home">
+      <div class="slider-wrap">
+          <ul class="landing">
+              <li style="background-image: url('img/landing2.jpg');">
+                  <div class="container">
+                      <div class="slider-content">
+                          <h1>Granite Fabrication<br><span style="font-size: 27pt">&amp;</span> <br>Installation</h1><br>   
+                          <p>Granite fabrication and installation for Commercial and Residential projects. Azteca Granite specializes in beautifying the homes of the Dallas area with the elegance of custom granite stone.</p>
+                      </div>
+                  </div>
+
+              </li>
+          </ul>
       </div>
     </div>
-
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-        </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
+<!-- End bxslider -->
+<!-- kitchen gallery -->
+    <div class="section" data-anchor="kitchens">
+      <div class="gallery-head">
+        <h2>Kitchens</h2>
+      </div>
+      <div class="row">
+        <div class="owl-slider owl-carousel">
+          <div class="item"><img src="img/kitchen1.jpg" alt="kitchen granite countertops"></div>
+          <div class="item"><img src="img/kitchen2.jpg" alt="kitchen granite countertops"></div>
+          <div class="item"><img src="img/kitchen3.jpeg" alt="kitchen granite countertops"></div>  
+          <div class="item"><img src="img/kitchen4.jpg" alt="kitchen granite countertops"></div>
+          <div class="item"><img src="img/kitchen5.jpeg" alt="kitchen granite countertops"></div>
+          <div class="item"><img src="img/kitchen6.jpg" alt="kitchen granite countertops"></div>
+          <div class="item"><img src="img/kitchen7.jpeg" alt="kitchen granite countertops"></div>
         </div>
       </div>
+      <div class="row show-for-medium-up">
+        <p>Custom made Kitchen counter tops, all made to fit your specific needs.</p>
+        <p>Granite is a less expensive alternative to marble and is notable for its strength and unique beauty. No two pieces are the same. It is one of the toughest rocks in the world, making it a popular choice for countertops.</p>
+        <p>Granite is most commonly used on kitchen counters where food is prepared. It is easy to clean, stain and heat resistant and stylish.</p>
+      </div>   
+      <div class="row show-for-small-only">
+        <p>Custom made Kitchen counter tops, all made to fit your specific needs.</p>
+      </div> 
     </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-
-        <hr />
-
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
+<!-- end kitchen gallery -->
+<!-- bathroom gallery -->
+    <div class="section" data-anchor="bathrooms">
+      <div class="gallery-head">
+        <h2>Bathrooms</h2>
       </div>
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
+      <div class="row">
+        <div class="owl-slider owl-carousel">
+          <div class="item"><img src="img/bathroom1.jpeg" alt="bathroom granite vanity"></div>
+          <div class="item"><img src="img/bathroom2.jpg" alt="bathroom granite vanity"></div>
+          <div class="item"><img src="img/bathroom3.jpeg" alt="bathroom granite vanity"></div>  
+          <div class="item"><img src="img/bathroom4.jpg" alt="bathroom granite vanity"></div>
+          <div class="item"><img src="img/bathroom5.jpg" alt="bathroom granite vanity"></div>
+          <div class="item"><img src="img/bathroom6.jpg" alt="bathroom granite vanity"></div>
         </div>
       </div>
+      <div class="row show-for-medium-up">
+        <p>Have the bathroom vanity that you have always wanted.</p>
+        <p>Remodel your bathroom countertops, backsplash and shower space.</p>
+        <p>Azteca Granite can empower you with experience and the confidence to make your dreams become a reality, bringing the elegance of stone to meet the demands of your lifestyle.</p>
+      </div> 
+      <div class="row show-for-small-only">
+        <p>Have the bathroom vanity that you have always wanted.</p>
+      </div>       
     </div>
+<!-- end bathroom gallery -->
+<!-- sinks gallery -->
+    <div class="section" data-anchor="sinks">
+        <div class="gallery-head">
+            <h2>Sinks</h2>
+        </div>
+        <div class="row">
+            <div class="owl-slider owl-carousel">
+                <div class="item"><img src="img/sink1.jpeg" alt="Granite sinks and backsplash"></div>
+                <div class="item"><img src="img/sink3.jpeg" alt="Granite sinks and backsplash"></div>
+                <div class="item"><img src="img/sink4.jpeg" alt="Granite sinks and backsplash"></div>
+                <div class="item"><img src="img/sink5.jpg" alt="Granite sinks and backsplash"></div>
+                <div class="item"><img src="img/sink6.jpg" alt="Granite sinks and backsplash"></div>
+                <div class="item"><img src="img/sink7.jpeg" alt="Granite sinks and backsplash"></div>
+                <div class="item"><img src="img/sink2.jpeg" alt="Granite sinks and backsplash"></div>
+            </div>
+        </div>
+        <div class="row show-for-medium-up">
+            <p>Spend your mornings getting ready in an ambiance that Azteca Granite can help you attain.</p>
+            <p>Granite provides a natural durability, while upgrading to an attractive aura and aesthetic, while providing an endless variety of patterns.</p>
+        </div>    
+        <div class="row show-for-small-only">
+          <p>Spend your mornings getting ready in an ambiance that Azteca Granite can help you attain.</p>
+        </div>
+    </div>
+<!-- end sinks gallery -->
+<!-- Contact -->
+<div class="section" data-anchor="contact">
+  <div class="gallery-head">
+    <h2>Contact</h2>
+  </div>
+  <div class="row" style="text-align:center">
+      <img id="calendar" src="img/aztec-calendar-350.png" alt="azteca granite aztec calendar">
+  </div>
+  <div class="row">
+    <div class="contact show-for-medium-up">
+      <p>Office: (972) 926 - 4343 <br>Fax: (972) 926 - 4321</p>
+      <p>Email: aztecagranite@verizon.net</p>
+      <p>3139 National Circle <br>Suite B <br>Garland, TX 75041</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="show-for-small-only">
+      <p>Office: (972) 926 - 4343 <br>Fax: (972) 926 - 4321 <br>
+      Email: aztecagranite@verizon.net <br>
+      3139 National Circle <br>Suite B <br>Garland, TX 75041</p>
+    </div>
+  </div>
 
+</div>
+<!-- End Contact -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
+   
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
