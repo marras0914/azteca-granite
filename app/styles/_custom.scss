@@ -1,0 +1,248 @@
+
+
+@import url(http://fonts.googleapis.com/css?family=Duru+Sans);
+@font-face {
+    font-family: bebas;
+    src: url("../fonts/bebas.ttf") format('truetype');
+}
+@font-face {
+    font-family: bizon;
+    src: url("../fonts/bizon.otf") format('truetype');
+}
+@font-face {
+    font-family: langdon;
+    src: url("../langdon.otf") format('truetype');
+}
+@font-face {
+    font-family: dense;
+    src: url("../fonts/dense-regular.otf") format('truetype');
+}
+@font-face {
+    font-family: brandon;
+    src: url("../fonts/brandongrotesque-black.ttf") format('truetype');
+}
+@font-face {
+    font-family: proximanova;
+    src: url("../fonts/proximanova-semibold.ttf") format('truetype');
+}
+
+
+// Full screen background image bxslider
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+
+// ---------- Mobile Sass ---------------
+
+//changes drop down menu bg color
+.top-bar-section ul li{
+     background-color: $secondary-color;
+}
+
+// "MENU" color
+.top-bar.expanded .toggle-topbar a {
+     color: $white;
+}
+
+// -------- End Mobile ----------------
+
+// Bxslider landing page
+.slider-wrap{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+    // bxslider background image
+    .bx-viewport, .bx-wrapper{
+        position:relative;
+        width:100%;
+        height:100% !important;
+        top:0;
+        left:0;
+    }
+    .landing, .landing li{
+        height: 100% !important;
+    }
+    .landing li{
+        background-repeat: no-repeat;
+        background-position: top center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .bx-wrapper, .bx-viewport{
+        border: none !important;
+    }
+    // content in middle of screen
+    .container{
+        position: relative;
+        height: 100%;
+        text-align: center;
+    }
+    .slider-content{
+        position: absolute;
+        max-width: 600px;
+        min-width: 300px;  
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 5px 0 5px;
+        p{
+            font-family: proximanova, sans-serif;
+            font-size: 12pt;
+            color: $white;
+            max-width: 550px;
+        }   
+        h1{
+            font-size: 45pt;
+            font-family: brandon;
+            color: $white;
+            line-height: 90%;
+            letter-spacing: 3px;
+            text-transform: uppercase;          
+        } 
+    }
+    
+
+
+// navigation topbar name font styles
+.top-bar .name h1 a span {
+        margin-left: 60px;
+        font-family: bizon, sans-serif;
+        font-size: 20pt;
+        color: $primary-color;
+        line-height: 2.59rem;
+}
+.top-bar .name h1 a img{
+    overflow: visible;
+    position: fixed;
+}
+
+.owl-slider .item {
+    margin: 3px;
+}
+.owl-slider .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 35px;
+    font-family: brandon;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-bottom: 30px;
+    color: scale-color($secondary-color, $lightness: 10%);
+}
+p {
+    text-align: center;
+    font-family: proximanova;
+    font-size: 16px;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    color: #8c989e; //greyish
+}
+
+
+//bouncing directional arrow 
+.bounce {
+  position:fixed;
+  left:50%;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+@keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+.arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+  pointer: cursor;
+}
+
+
+.owl-slider .owl-theme .owl-controls .owl-buttons div{
+    .owl-prev, .owl-next{
+        background-color: $primary-color;
+    }
+}
+
+#calendar{
+    display: inline-block;
+}
+h3{
+    font-family: bizon;
+    color: $secondary-color;
+    font-size: 26pt;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -55px;
+    //left: 50%;
+    top: 50%;
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    margin: auto;
+    
+}
+.show-for-small-only{
+
+}
+
+.gallery-head h2{
+    padding-bottom: 45px;
+    padding-top: 50px;
+    
+}
+// mobile text sizes
+@media screen and (max-width: 450px) {
+    .slider-content {
+        h1{
+            font-size: 27pt;
+        }
+    }
+    .top-bar .name h1 a span{
+        font-size: 16pt;
+    }
+    .gallery-head h2{
+        padding-top: 18px;
+        padding-bottom: 15px;
+    }
+}
+
+
+
+

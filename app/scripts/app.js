@@ -1,6 +1,8 @@
 $(document).foundation();
 $(document).ready(function(){
-     $('.landing').bxSlider();
+     $('.landing').bxSlider({
+          pager: false
+     });
      $('#fullpage').fullpage({
           verticalCentered: false,
           paddingTop: '0',
